@@ -5,7 +5,7 @@
 [![Build Status](https://img.shields.io/travis/nwidart/MoneyFormatter/master.svg?style=flat-square)](https://travis-ci.org/nwidart/MoneyFormatter)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/nwidart/MoneyFormatter.svg?style=flat-square)](https://scrutinizer-ci.com/g/nwidart/MoneyFormatter/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/nwidart/MoneyFormatter.svg?style=flat-square)](https://scrutinizer-ci.com/g/nwidart/MoneyFormatter)
-[![Total Downloads](https://img.shields.io/packagist/dt/nwidart/MoneyFormatter.svg?style=flat-square)](https://packagist.org/packages/nwidart/MoneyFormatter)
+[![Total Downloads](https://img.shields.io/packagist/dt/nwidart/money-formatter.svg?style=flat-square)](https://packagist.org/packages/nwidart/money-formatter)
 
 A simple package used for formatting a `Money\Money` value object.
 
