@@ -6,6 +6,6 @@ class MoneyFormatterFacade extends Facade
 {
     public static function getFacadeAccessor()
     {
-        return 'Modules\AbstractnessMonitor\Application\Money\MoneyFormatter';
+        return 'money.formatter';
     }
 }
