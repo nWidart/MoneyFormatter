@@ -22,7 +22,7 @@ class MoneyFormatter
     public function __construct($locale = null)
     {
         $this->locale = $locale;
-        if ( ! isset(static::$currencies)) {
+        if (! isset(static::$currencies)) {
             static::$currencies = json_decode(file_get_contents(__DIR__ . '/currencies.json'));
         }
     }
@@ -39,6 +39,7 @@ class MoneyFormatter
         $code = $this->code($value);
         $divisor = $this->divisor($code);
         $amount = $this->convert($value, $divisor);
+
         return $formatter->formatCurrency($amount, $code);
     }
 
@@ -54,6 +55,7 @@ class MoneyFormatter
         $code = $this->code($value);
         $divisor = $this->divisor($code);
         $amount = $this->convert($value, $divisor);
+
         return $formatter->formatCurrency($amount, $code);
     }
 

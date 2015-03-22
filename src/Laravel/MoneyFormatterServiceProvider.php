@@ -1,8 +1,7 @@
 <?php namespace Nwidart\MoneyFormatter\Laravel;
 
-use Illuminate\Support\ServiceProvider;
-
 use Illuminate\Foundation\AliasLoader;
+use Illuminate\Support\ServiceProvider;
 
 class MoneyFormatterServiceProvider extends ServiceProvider
 {

@@ -1,4 +1,4 @@
-<?php namespace Nwidart\MoneyFormatter\Tests;
+<?php namespace Nwidart\MoneyFormatter\tests;
 
 use Money\Currency;
 use Money\Money;
