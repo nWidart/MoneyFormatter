@@ -1,6 +1,6 @@
 <?php namespace Nwidart\MoneyFormatter\Tests;
 
-class FormatterTest extends \PHPUnit_Framework_TestCase
+class MoneyFormatterTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * Test that true does in fact equal true
