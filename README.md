@@ -54,6 +54,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ## Credits
 
 - [Nicolas Widart](https://github.com/nWidart)
+- [Philip Brown](https://github.com/philipbrown) for the inspiration from his Basket package. Decided to extract the MoneyFormatter class to a dedicated package.
 - [All Contributors](../../contributors)
 
 ## License
