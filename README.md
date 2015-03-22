@@ -19,6 +19,24 @@ $ composer require nwidart/MoneyFormatter
 
 ## Usage
 
+To format money in **cents**:
+
+``` php
+$formatter = new MoneyFormatter('en_US');
+$formattedMoney = $formatter->format(new Money(1000, new Currency('USD')));
+# output : $10.00
+```
+
+Sometimes you may wish to not have the currency symbol, this can be done like so:
+
+``` php
+$formatter = new MoneyFormatter('en_US');
+$formattedMoney = $formatter->formatWithoutCurrency(new Money(1000, new Currency('USD')));
+# output : 10.00
+```
+
+This can be useful if your currency selection is a separate dropdown, for instance.
+
 ## Testing
 
 ``` bash
