@@ -16,7 +16,7 @@ Money is usually not stored as a float in your database, though your clients/use
 Via Composer
 
 ``` bash
-$ composer require nwidart/MoneyFormatter
+$ composer require nwidart/money-formatter
 ```
 
 ## Usage
