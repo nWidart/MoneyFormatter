@@ -11,6 +11,8 @@ A simple package used for formatting a [`Money\Money`](https://github.com/mathia
 
 Money is usually not stored as a float in your database, though your clients/users don't want to see `1000` meaning, 10. This package receives an amount in cents, and displays it according to the given locale with or with the currency symbol.
 
+**Todo** Move the Facade and Service Provider to own dedicated package.
+
 ## Install
 
 Via Composer
