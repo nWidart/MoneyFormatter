@@ -7,7 +7,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/nwidart/MoneyFormatter.svg?style=flat-square)](https://scrutinizer-ci.com/g/nwidart/MoneyFormatter)
 [![Total Downloads](https://img.shields.io/packagist/dt/nwidart/money-formatter.svg?style=flat-square)](https://packagist.org/packages/nwidart/money-formatter)
 
-A simple package used for formatting a `Money\Money` value object.
+A simple package used for formatting a [`Money\Money`](https://github.com/mathiasverraes/money) value object.
 
 Money is usually not stored as a float in your database, though your clients/users don't want to see `1000` meaning, 10. This package receives an amount in cents, and displays it according to the given locale with or with the currency symbol.
 
