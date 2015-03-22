@@ -25,4 +25,11 @@ class MoneyFormatterTest extends \PHPUnit_Framework_TestCase
         $formatter = new MoneyFormatter('fr_BE');
         $this->assertEquals('10,00 €', $formatter->format(new Money(1000, new Currency('EUR'))));
     }
+
+    /** @test */
+    public function it_should_format_currency_without_currency_symbol()
+    {
+        $formatter = new MoneyFormatter('fr_BE');
+        $this->assertEquals('10,5', $formatter->formatWithoutCurrency(new Money(1050, new Currency('EUR'))));
+    }
 }
