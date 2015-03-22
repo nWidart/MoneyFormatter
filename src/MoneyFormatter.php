@@ -66,6 +66,7 @@ class MoneyFormatter
         if ($this->locale) {
             return $this->locale;
         }
+
         return Locale::getDefault();
     }
 

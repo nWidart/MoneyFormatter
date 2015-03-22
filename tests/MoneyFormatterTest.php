@@ -39,4 +39,11 @@ class MoneyFormatterTest extends \PHPUnit_Framework_TestCase
         $formatter = new MoneyFormatter('en_US');
         $this->assertEquals('10.5', $formatter->formatWithoutCurrency(new Money(1050, new Currency('USD'))));
     }
+
+    /** @test */
+    public function it_should_use_current_locale_if_none_provided()
+    {
+        $formatter = new MoneyFormatter();
+        $this->assertEquals('10.5', $formatter->formatWithoutCurrency(new Money(1050, new Currency('USD'))));
+    }
 }
