@@ -2,6 +2,7 @@
 
 use Money\Currency;
 use Money\Money;
+use NumberFormatter;
 use Nwidart\MoneyFormatter\MoneyFormatter;
 
 class MoneyFormatterTest extends \PHPUnit_Framework_TestCase
@@ -20,10 +21,13 @@ class MoneyFormatterTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('$10.00', $formatter->format(new Money(1000, new Currency('USD'))));
     }
 
+    /** @test */
     public function should_format_as_european_euros()
     {
-        $formatter = new MoneyFormatter('fr_BE');
-        $this->assertEquals('10,00 €', $formatter->format(new Money(1000, new Currency('EUR'))));
+        $moneyFormatter = new MoneyFormatter('fr_BE');
+        $formatter = new NumberFormatter('fr_BE', NumberFormatter::CURRENCY);
+
+        $this->assertEquals($formatter->formatCurrency('10.00', 'EUR'), $moneyFormatter->format(new Money(1000, new Currency('EUR'))));
     }
 
     /** @test */
